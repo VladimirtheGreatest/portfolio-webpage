@@ -1,0 +1,40 @@
+body{
+  font-family: sans-serif, monospace;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  background:url('../img/BG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation{
+  float:right;
+  display: inline-block;
+  line-height: 20px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.navigation a{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff
+}
+
+.navigation a:hover{
+    font-weight: bold;
+}
+
+#main{
+  text-align: center;
+  padding-top: 180px;
+}
+
+#main h1{
+  font-size: 300%;
+  color: #fff
+}
