@@ -6,10 +6,9 @@ body{
   padding: 0;
   margin: 0;
   font-family: sans-serif monospace;
-  font-size: 24px;
+  font-size:2vw;
   width: 100%;
 }
-
 
 /* I will do header with navigation which will be fixed */
 header nav{
@@ -19,7 +18,6 @@ height: 60px;
 
 header nav ul{
   top: 0;
-  right:450px;
   position:fixed;
   list-style: none;
   text-decoration: none;
@@ -30,6 +28,10 @@ header nav li{
   padding: 10px;
 }
 
+#navigation a:hover{
+  font-weight: bolder;
+  text-decoration: none;
+}
 
 header a{
   padding: 10px;
@@ -37,18 +39,35 @@ header a{
   color: black;
 }
 
-header a:hover{
-  text-transform: uppercase;
-  background-color: #555;
+. nav navbar-nav>li>a:hover{
+  background:red;
 }
 
-header a:active{
-  border: 3px solid red;
+/*hidden subscribe button that will become visible after scrolling*/
+.sub{
+  float: right;
+  font-weight: bold;
+  visibility: hidden;
 }
 
+/*icons navbar social media icons on the right side*/
+.icons{
+  position: fixed;
+  left: -40px;
+  padding-top: 80px;
+}
+
+.icons a:hover{
+  text-decoration: none;
+}
+
+.icons ul{
+  list-style: none;
+}
 
 /*Simple background image*/
 .image{
+  width: 100%;
   background-image: url('../img/BG.jpg');
   background-size: cover;
   background-position: center;
@@ -68,7 +87,62 @@ header a:active{
   text-align: center;
 }
 
+/*bootstrap scrolling menu*/
 .navbar-fixed-top.scrolled {
   background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ !important;
   transition: background-color 200ms linear;
+  border-bottom: 3px solid grey;
 }
+
+/*subscribe button that will become visible after scrolling and will grab attention*/
+.sub.visible{
+visibility: visible;
+}
+
+/*footer*/
+
+footer{
+  width: 90%;
+  text-align: justify;
+  margin: 0 auto;
+  width: 40em;
+  margin-top: 30px;
+  border: 3px solid grey;
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+footer ul li{
+  display:inline-block;
+  position: relative;
+  left: 330px;
+}
+
+footer a:hover{
+  text-decoration: none;
+}
+
+/*Responsivness*/
+
+@media screen and (max-width:775px) {
+   header nav li {
+       max-width: 100%;
+       padding: 0px 5px 0px 5px;
+       float: none;
+       text-align: center;
+       display: block;
+       font-size: 20px;
+   }
+}
+
