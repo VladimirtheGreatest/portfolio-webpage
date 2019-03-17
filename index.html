@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Another web site from the scratch training :)</title>
       <link rel="stylesheet" href="./css/style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
 
     <header>
       <nav id="navigation" class="navbar navbar-dark bg-light navbar-fixed-top" >
-        <ul class="nav navbar-nav">
-          <li class="nav-item><a href="index.html">Home</a></li>
-          <li class="nav-item><a href="index.html">Portfolio</a></li>
-          <li class="nav-item><a href="index.html">Contact</a></li>
-          <li class="nav-item><a href="index.html">About me</a></li>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="index.html">About me</a></li>
         </ul>
+      <div class="sub animated infinite heartBeat">
+        <a href="index.html">Subscribe:)</a>
+      </div>
       </nav>
+
+      <div class="icons">
+      <ul>
+    <li><a href="index.html" class="fab fa-facebook-square fa-2x"></a></li>
+    <li><a href="#" class="fab fa-twitter-square fa-2x"></a></li>
+    <li><a href="#" class="fab fa-instagram fa-2x"></a></li>
+    <li><a href="#" class="fas fa-at fa-2x"></a></li>
+      </ul>
+      </div>
     </header>
+
     <div class="image">
 
     </div>
@@ -27,13 +42,20 @@
       <h1>Lorem ipsum dolor sit amet, consecur sunt.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
     </section>
 
     <footer>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      <p>Follow us on</p>
+      <ul>
+        <li><a href="index.html" class="fab fa-facebook-square fa-3x"></a></li>
+        <li><a href="#" class="fab fa-twitter-square fa-3x"></a></li>
+        <li><a href="#" class="fab fa-instagram fa-3x"></a></li>
+        <li><a href="#" class="fas fa-at fa-3x"></a></li>
+      </ul>
 
     </footer>
+
 
   <script type="text/javascript">
 $(function () {
@@ -42,8 +64,17 @@ var $nav = $(".navbar-fixed-top");
 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 });
+
+$(function () {
+$(document).scroll(function () {
+var $nav = $(".sub");
+$nav.toggleClass('visible', $(this).scrollTop() > $nav.height());
+});
+});
+
   </script>
 
 
   </body>
 </html>
+
