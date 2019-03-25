@@ -2,7 +2,8 @@ body, html {
   height: 100%;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-  padding-bottom: 50px;
+  padding-bottom: px;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -24,6 +25,7 @@ body, html {
   font-size: 400%;
   text-align: center;
   padding-top: 150px;
+  visibility: visible;
 }
 
 /*text area*/
@@ -32,6 +34,7 @@ body, html {
   margin: 50px;
   text-align: justify;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 #main h2 {
@@ -44,6 +47,7 @@ body, html {
 
 #boxes {
   margin-bottom: 150px;
+  margin-top: 100px;
 }
 
 /*form*/
@@ -84,6 +88,12 @@ input[type=submit]:hover {
   padding-left: 60px;
 }
 
+/*button*/
+
+#button{
+  visibility: visible;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-75, input[type=submit] {
@@ -92,3 +102,13 @@ input[type=submit]:hover {
     padding: 0px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #button{
+    display: none;
+  }
+  .bg h1{
+    display: none;
+  }
+}
+
